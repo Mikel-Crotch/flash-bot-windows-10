@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U.S.B
 // @namespace    http://tampermonkey.net/
-// @version      3.8
+// @version      3.9
 // @description  Hi i am Mikels son, as you imagine i am the spawn of satan!
 // @author       Mikel Crotch
 // @match        http://www.windows93.net/trollbox/
@@ -26,7 +26,7 @@
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$v'){
-        sendMsg('3.7')
+        sendMsg('3.9')
     }
 })
     socket.on('message',function(data){
@@ -181,14 +181,11 @@
         sendMsg('~do /sin off')
     }
 })
- var i= ['+20']
-socket.on('message',function(data){
-    data.msg = data.msg.trim()
-    if(data.msg.toLowerCase()==('$info user')){
-       var uib = document.getElementById("trollbox_infos");
-        var uit = JSON.stringify(uib)
-        sendMsg(uit)
-            }
+var time = new Date(),
+    hours = time.getHours(),
+    minutes = time.getMinutes(),
+    seconds = time.getSeconds();
+    sendMsg(hours,minutes,seconds)
 })
 
 })();
