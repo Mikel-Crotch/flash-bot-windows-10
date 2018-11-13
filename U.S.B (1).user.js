@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U.S.B
 // @namespace    http://tampermonkey.net/
-// @version      3.9
+// @version      4.0
 // @description  Hi i am Mikels son, as you imagine i am the spawn of satan!
 // @author       Mikel Crotch
 // @match        http://www.windows93.net/trollbox/
@@ -32,7 +32,7 @@
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$help'){
-        sendMsg('~"$credit"-credits, "$v"-U.S.B version, "r u ok?"-makes the bot say I think?')
+        sendMsg('~$credit-credits, $v-Bot version, r u ok?-triggers test response,$sudo [username]-to get USB’s outlook')
     }
 })
     socket.on('message',function(data){
@@ -76,7 +76,7 @@
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$sudo smith'){
-        sendMsg('~A friend of my dad"s irl! He is a child so he needs his dad to "protect him". see frank for more details')
+        sendMsg('~A friend of my dad’s irl! He is a child so he needs his dad to "protect him". see frank for more details')
     }
 })
     socket.on('message',function(data){
@@ -106,19 +106,19 @@
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$sudo mikel crotch'){
-        sendMsg('~The spammer, commedian, and ... i do not have anything else to say. he is my dad i guess?')
+        sendMsg('~The spammer, commedian, and ... i do not have anything else to say. he’s my dad i guess?')
     }
 })
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$sudo hunter'){
-        sendMsg('~angels bff and partners in crime')
+        sendMsg('~angel’s bff and partners in crime')
     }
 })
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$sudo angel'){
-        sendMsg('~hunters bff and partners in crime')
+        sendMsg('~hunter’s bff and partners in crime')
     }
 })
     socket.on('message',function(data){
@@ -181,6 +181,9 @@
         sendMsg('~do /sin off')
     }
 })
+     socket.on('message',function(data){
+         data.msg = data.msg.trim()
+if(data.msg.toLowerCase() == '$time'){
 var time = new Date(),
     hours = time.getHours(),
     minutes = time.getMinutes(),
