@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U.S.B
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.1
 // @description  Hi i am Mikels son, as you imagine i am the spawn of satan!
 // @author       Mikel Crotch
 // @match        http://www.windows93.net/trollbox/
@@ -11,10 +11,15 @@
 (function() {
     'use strict';
 
+     setTimeout(sendMsg('~Starting'), 1010)
+     setTimeout(sendMsg('/sin off'), 1010)
+     setTimeout(sendMsg('/say off'), 1010)
+     setTimeout(sendMsg('~$help for help'), 1010) 
+     setTimeout(sendMsg('/color #DE0000'), 1010)
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$credit'){
-        sendMsg('~My daddy Mikel and Angelos_Service had a baby and that baby was me (thank you Angelo for the code! :D)')
+        sendMsg('~My daddy Mikel and Angelos_Service had a baby and that baby was me, but i only look like him. buy my daddy and lw82 spent a long time together one night... and i was the made! (thank you Angelo for the code! :D, lw thanks for your help)')
     }
 })
     socket.on('message',function(data){
@@ -32,7 +37,7 @@
     socket.on('message',function(data){
       data.msg = data.msg.trim()
     if(data.msg.toLowerCase() == '$help'){
-        sendMsg('~$credit-credits, $v-Bot version, r u ok?-triggers test response,$sudo [username]-to get USB’s outlook')
+        sendMsg('~$credit-credits, $v-Bot version, r u ok?-triggers test response,$sudo [username]-to get USB’s outlook, $time-well to see time?')
     }
 })
     socket.on('message',function(data){
