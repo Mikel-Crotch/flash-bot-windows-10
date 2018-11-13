@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U.S.B
 // @namespace    http://tampermonkey.net/
-// @version      3.7
+// @version      3.8
 // @description  Hi i am Mikels son, as you imagine i am the spawn of satan!
 // @author       Mikel Crotch
 // @match        http://www.windows93.net/trollbox/
