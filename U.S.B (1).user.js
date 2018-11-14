@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U.S.B
 // @namespace    http://tampermonkey.net/
-// @version      4.6
+// @version      4.7
 // @description  Hi i am Mikels son, as you imagine i am the spawn of satan!
 // @author       Mikel Crotch
 // @match        http://www.windows93.net/trollbox/
@@ -12,7 +12,7 @@
     'use strict';
 
     //initialization
-    var z = 0
+    var z
     setTimeout(sendMsg('~Starting'), 1010)
     setTimeout(sendMsg('/sin off'), 1010)
     setTimeout(sendMsg('/say off'), 1010)
